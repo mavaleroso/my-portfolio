@@ -28,8 +28,7 @@ const Hero = () => {
             </div>
             <h1 className='h1 mb-4'>Hello, my name is Marwen Valeroso</h1>
             <p className='subtitle max-w-[490px] mx-auto xl:mx-0'>
-              Brief description with my insights into myself, my vocational
-              journey, and what I engage in professionally.
+              I am willing to explore things that may deem impossible from other people, creating more appealing and beneficial ideas for future generations.
             </p>
             {/* buttons */}
             <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12'>
@@ -54,15 +53,15 @@ const Hero = () => {
             <Badge
               containerStyles='absolute top-[24%] -left-[5rem]'
               icon={<RiBriefcase4Fill />}
-              endCountNum={3}
+              endCountNum={5}
               badgeText='Years Of Experience'
             />
             {/* badge 2 */}
             <Badge
               containerStyles='absolute top-[80%] -left-[1rem]'
               icon={<RiTodoFill />}
-              endCountNum={6}
-              endCountText='k'
+              endCountNum={11}
+              endCountText=''
               badgeText='Finished Projects'
             />
             {/* badge 3 */}
@@ -70,8 +69,8 @@ const Hero = () => {
               containerStyles='absolute top-[55%] -right-8'
               icon={<RiTeamFill />}
               endCountNum={6}
-              endCountText='k'
-              badgeText='Happy Clients'
+              endCountText=''
+              badgeText='Good Reviews'
             />
             <div className='bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2'></div>
             <DevImg

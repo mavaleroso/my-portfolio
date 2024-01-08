@@ -22,7 +22,7 @@ const servicesData = [
   },
   {
     icon: <Gem size={72} strokeWidth={0.8} />,
-    title: 'App Development',
+    title: 'Mobile Development',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odio assumenda deleniti quas atque deserunt repudiandae, a quo expedita officiis libero alias quis laudantium beatae dolorum adipisci. Consequatur, velit officiis!',
   },

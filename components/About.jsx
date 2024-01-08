@@ -21,7 +21,7 @@ const infoData = [
   },
   {
     icon: <PhoneCall size={20} />,
-    text: '+065 948 957 1604',
+    text: '+063 948 957 1604',
   },
   {
     icon: <MailIcon size={20} />,
@@ -145,7 +145,7 @@ const About = () => {
                 <TabsContent value='personal'>
                   <div className='text-center xl:text-left'>
                     <h3 className='h3 mb-4'>
-                      Unmatched Service Quality for Over 10 Years
+                      Service for Over 5 Years
                     </h3>
                     <p className='subtitle max-w-xl mx-auto xl:mx-0'>
                       I specialize in crafting intuitive website with
