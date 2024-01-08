@@ -26,37 +26,6 @@ const projectData = [
     images: ['/work/1/1.png'],
   },
   {
-    image: '/work/2.png',
-    category: 'Codeigniter',
-    name: 'Codenect',
-    description:
-      'A game web app that I created as a student to help people on programing basics and fundamentals',
-    link: '',
-    github: 'https://github.com/mavaleroso/codenect',
-    images: [
-      '/work/2/1.png',
-      '/work/2/2.png',
-      '/work/2/3.png',
-      '/work/2/4.png',
-      '/work/2/5.png',
-      '/work/2/6.png',
-      '/work/2/7.png',
-      '/work/2/8.png',
-      '/work/2/9.png',
-      '/work/2/10.png',
-    ],
-  },
-  {
-    image: '/work/4.png',
-    category: 'Vue JS + Laravel',
-    name: 'Vehicle Tracking System',
-    description:
-      'A web app I created to address DSWD General Services manual tracking and monitoring of its vehicle and travel funds',
-    link: '',
-    github: 'https://bitbucket.org/mavaleroso/gstracking',
-    images: ['/work/4/1.png'],
-  },
-  {
     image: '/work/3.png',
     category: 'React JS + Django',
     name: 'Accounting Reporting System',
@@ -76,6 +45,18 @@ const projectData = [
     github: 'https://github.com/mavaleroso/quizmify-test',
     images: ['/work/5/1.png'],
   },
+
+  {
+    image: '/work/4.png',
+    category: 'Vue JS + Laravel',
+    name: 'Vehicle Tracking System',
+    description:
+      'A web app I created to address DSWD General Services manual tracking and monitoring of its vehicle and travel funds',
+    link: '',
+    github: 'https://bitbucket.org/mavaleroso/gstracking',
+    images: ['/work/4/1.png'],
+  },
+
   {
     image: '/work/6.png',
     category: 'Vue JS + Laravel',
@@ -113,6 +94,27 @@ const projectData = [
       '/work/8/6.png',
       '/work/8/7.png',
       '/work/8/8.png',
+    ],
+  },
+  {
+    image: '/work/2.png',
+    category: 'Codeigniter',
+    name: 'Codenect',
+    description:
+      'A game web app that I created as a student to help people on programing basics and fundamentals',
+    link: '',
+    github: 'https://github.com/mavaleroso/codenect',
+    images: [
+      '/work/2/1.png',
+      '/work/2/2.png',
+      '/work/2/3.png',
+      '/work/2/4.png',
+      '/work/2/5.png',
+      '/work/2/6.png',
+      '/work/2/7.png',
+      '/work/2/8.png',
+      '/work/2/9.png',
+      '/work/2/10.png',
     ],
   },
 ]
