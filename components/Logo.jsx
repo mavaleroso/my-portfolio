@@ -9,7 +9,7 @@ const Logo = () => {
       <Link href='/'>
         <Image src='/logo.png' width={54} height={54} priority alt='test' />
       </Link>
-      <h2 className='h2 mt-3'>arwen Portfolio</h2>
+      <h2 className='h2 mt-3 hidden xl:flex'>arwen Portfolio</h2>
     </div>
   )
 }

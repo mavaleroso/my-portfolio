@@ -100,7 +100,7 @@ const About = () => {
   }
 
   return (
-    <section className='xl:h-[860px] pb-12 xl:py-24 mb-24'>
+    <section className='xl:h-[860px] pb-12 my-24 py-24'>
       <div className='container mx-auto'>
         <h2 className='section-title mb-8 text-center mx-auto'>About me</h2>
         <div className='flex flex-col xl:flex-row'>

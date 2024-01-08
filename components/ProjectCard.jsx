@@ -56,7 +56,7 @@ const ProjectCard = ({ project }) => {
               <DialogTrigger asChild>
                 <Button
                   size='icon'
-                  className='bg-primary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200'
+                  className='bg-primary w-[54px] h-[54px] rounded-full justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 hidden xl:flex'
                 >
                   <EyeIcon className='text-white' />
                 </Button>
@@ -72,6 +72,8 @@ const ProjectCard = ({ project }) => {
                             className='m-auto'
                             width={1000}
                             height={1000}
+                            blurDataURL='data:...'
+                            placeholder='blur'
                             priority
                           />
                         </div>
