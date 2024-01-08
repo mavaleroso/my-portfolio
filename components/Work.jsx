@@ -91,9 +91,6 @@ const projectData = [
       '/work/8/3.png',
       '/work/8/4.png',
       '/work/8/5.png',
-      '/work/8/6.png',
-      '/work/8/7.png',
-      '/work/8/8.png',
     ],
   },
   {
