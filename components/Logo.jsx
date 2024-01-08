@@ -5,9 +5,12 @@ import Image from 'next/image'
 
 const Logo = () => {
   return (
-    <Link href="/">
-      <Image src="/logo.svg" width={54} height={54} priority alt="test" />
-    </Link>
+    <div className='flex'>
+      <Link href='/'>
+        <Image src='/logo.png' width={54} height={54} priority alt='test' />
+      </Link>
+      <h2 className='h2 mt-3'>arwen Portfolio</h2>
+    </div>
   )
 }
 

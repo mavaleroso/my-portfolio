@@ -12,25 +12,25 @@ const servicesData = [
     icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
     title: 'Web Design',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odio assumenda deleniti quas atque deserunt repudiandae, a quo expedita officiis libero alias quis laudantium beatae dolorum adipisci. Consequatur, velit officiis!',
+      "I do web design services such as blogs, promotional, advertisement, and personal customization. The clients I have ranges from students, individual people, businessman, and event organizers. As what I've experience they do prefer having ther ideas incorporated and manifested by professionals not only limited to resources but the impact it held to their audience.",
   },
   {
     icon: <Blocks size={72} strokeWidth={0.8} />,
     title: 'Web Development',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odio assumenda deleniti quas atque deserunt repudiandae, a quo expedita officiis libero alias quis laudantium beatae dolorum adipisci. Consequatur, velit officiis!',
+      "Most of my projects comes from Web Development, takes time but worth the output and satisfaction it gives to my clients. As I experience over the years embodiment of the works and process clients required needs to be emphasized and strictly look at to deliver best user's experience.",
   },
   {
     icon: <Gem size={72} strokeWidth={0.8} />,
     title: 'Mobile Development',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odio assumenda deleniti quas atque deserunt repudiandae, a quo expedita officiis libero alias quis laudantium beatae dolorum adipisci. Consequatur, velit officiis!',
+      'Nowadays mobiles had the leading on used devices, thats why applications need to be portable and freely used everywhere whether its online or offline. Clients preferred things thay they can monitor everyday and anywhere as possible.',
   },
 ]
 
 const Services = () => {
   return (
-    <section className='mb-12 xl:mb-36'>
+    <section className='my-12 xl:mb-36'>
       <div className='container mx-auto'>
         <h2 className='section-title mb-12 xl:mb-24 text-center mx-auto'>
           My Services
@@ -40,7 +40,7 @@ const Services = () => {
           {servicesData.map((item, index) => {
             return (
               <Card
-                className='w-full max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative'
+                className='w-full max-w-[424px] h-[400px] flex flex-col pt-16 pb-10 justify-center items-center relative'
                 key={index}
               >
                 <CardHeader className='text-primary absolute -top-[60px]'>

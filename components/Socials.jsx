@@ -13,23 +13,19 @@ import Link from 'next/link'
 
 const icons = [
   {
-    path: '/',
-    name: <RiGoogleFill />,
-  },
-  {
-    path: '/',
+    path: 'https://www.facebook.com/marwen.valeroso/',
     name: <RiFacebookFill />,
   },
   {
-    path: '/',
+    path: 'https://www.instagram.com/mreawn_vlrsaeoo/',
     name: <RiInstagramFill />,
   },
   {
-    path: '/',
+    path: 'https://www.linkedin.com/in/marwen-valeroso-b86b02135/',
     name: <RiLinkedinFill />,
   },
   {
-    path: '/',
+    path: 'https://github.com/mavaleroso',
     name: <RiGithubFill />,
   },
 ]
@@ -39,7 +35,7 @@ const Socials = ({ containerStyles, iconStyles }) => {
     <div className={`${containerStyles}`}>
       {icons.map((icon, index) => {
         return (
-          <Link href={icon.path} key={index}>
+          <Link href={icon.path} key={index} target='_blank'>
             <div className={`${iconStyles}`}>{icon.name}</div>
           </Link>
         )

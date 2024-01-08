@@ -23,12 +23,14 @@ const Hero = () => {
         <div className='flex justify-between gap-x-8'>
           {/* text */}
           <div className='flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left'>
-            <div className='text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]'>
-              Software Developer
+            <div className='text-lg uppercase font-semibold mb-4 text-primary tracking-[4px]'>
+              Software Developer 🛠️
             </div>
             <h1 className='h1 mb-4'>Hello, my name is Marwen Valeroso</h1>
             <p className='subtitle max-w-[490px] mx-auto xl:mx-0'>
-              I am willing to explore things that may deem impossible from other people, creating more appealing and beneficial ideas for future generations.
+              I am willing to explore things that may deem impossible from other
+              people, creating more appealing and beneficial ideas for future
+              generations.
             </p>
             {/* buttons */}
             <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12'>
@@ -37,9 +39,11 @@ const Hero = () => {
                   Contact me <Send size={18} />
                 </Button>
               </Link>
-              <Button variant='secondary' className='gap-x-2'>
-                Download CV <Download size={18} />
-              </Button>
+              <Link href='/download/marwen-cv.pdf' download target='_blank'>
+                <Button variant='secondary' className='gap-x-2'>
+                  Download CV <Download size={18} />
+                </Button>
+              </Link>
             </div>
             {/* social */}
             <Socials

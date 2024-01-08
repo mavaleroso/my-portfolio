@@ -1,8 +1,24 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Card, CardHeader } from './ui/card'
-import { Github, Link2Icon } from 'lucide-react'
+import { Button } from './ui/button'
+import { Card, CardHeader, CardContent } from './ui/card'
+import { Github, Link2Icon, EyeIcon } from 'lucide-react'
 import { Badge } from './ui/badge'
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog'
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel'
 
 const ProjectCard = ({ project }) => {
   return (
@@ -20,18 +36,53 @@ const ProjectCard = ({ project }) => {
           />
           {/* btn links */}
           <div className='flex gap-x-4'>
-            <Link
-              href={project.link}
-              className='bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200'
-            >
-              <Link2Icon className='text-white' />
-            </Link>
+            {project.link && (
+              <Link
+                href={project.link}
+                target='_blank'
+                className='bg-primary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200'
+              >
+                <Link2Icon className='text-white' />
+              </Link>
+            )}
             <Link
               href={project.github}
-              className='bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200'
+              target='_blank'
+              className='bg-primary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200'
             >
               <Github className='text-white' />
             </Link>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button
+                  size='icon'
+                  className='bg-primary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200'
+                >
+                  <EyeIcon className='text-white' />
+                </Button>
+              </DialogTrigger>
+              <DialogContent className='max-w-screen-lg h-screen bg-transparent border-none'>
+                <Carousel className='w-[900px] max-h-sm mx-auto '>
+                  <CarouselContent>
+                    {project.images.map((img, index) => (
+                      <CarouselItem key={index} className='overflow-auto'>
+                        <div className='p-1 flex h-screen'>
+                          <Image
+                            src={img}
+                            className='m-auto'
+                            width={1000}
+                            height={1000}
+                            priority
+                          />
+                        </div>
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+                  <CarouselPrevious />
+                  <CarouselNext />
+                </Carousel>
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
       </CardHeader>

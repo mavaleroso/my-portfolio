@@ -74,33 +74,21 @@ const skillData = [
     title: 'skills',
     data: [
       {
-        name: 'HTML, CSS',
+        name: 'languages',
+        list: ['Php', 'Javascript', 'Python', 'Dart', 'Android Java'],
       },
       {
-        name: 'Front-end Development',
-      },
-      {
-        name: 'Javascript, PHP',
-      },
-      {
-        name: 'Back-end Development',
-      },
-    ],
-  },
-  {
-    title: 'tools',
-    data: [
-      {
-        imgPath: '/about/vscode.svg',
-      },
-      {
-        imgPath: '/about/figma.svg',
-      },
-      {
-        imgPath: '/about/notion.svg',
-      },
-      {
-        imgPath: '/about/wordpress.svg',
+        name: 'frameworks',
+        list: [
+          'Codeigniter',
+          'Laravel',
+          'Vue JS',
+          'React JS',
+          'Node JS',
+          'Tailwind',
+          'Django',
+          'Flutter',
+        ],
       },
     ],
   },
@@ -112,7 +100,7 @@ const About = () => {
   }
 
   return (
-    <section className='xl:h-[860px] pb-12 xl:py-24'>
+    <section className='xl:h-[860px] pb-12 xl:py-24 mb-24'>
       <div className='container mx-auto'>
         <h2 className='section-title mb-8 text-center mx-auto'>About me</h2>
         <div className='flex flex-col xl:flex-row'>
@@ -144,9 +132,7 @@ const About = () => {
                 {/* personal */}
                 <TabsContent value='personal'>
                   <div className='text-center xl:text-left'>
-                    <h3 className='h3 mb-4'>
-                      Service for Over 5 Years
-                    </h3>
+                    <h3 className='h3 mb-4'>Service for Over 5 Years</h3>
                     <p className='subtitle max-w-xl mx-auto xl:mx-0'>
                       I specialize in crafting intuitive website with
                       cutting-edge technology, delivering dynamic and engaging
@@ -170,7 +156,7 @@ const About = () => {
                     <div className='flex flex-col gap-y-2'>
                       <div className='text-primary'>Language Skill</div>
                       <div className='border-b border-border'></div>
-                      <div>Filipino, English</div>
+                      <div>Filipino, Bisaya, English </div>
                     </div>
                   </div>
                 </TabsContent>
@@ -257,50 +243,34 @@ const About = () => {
                 {/* skills */}
                 <TabsContent value='skills'>
                   <div className='text-center xl:text-left'>
-                    <h3 className='h3 mb-8'>Tools I use Everyday</h3>
+                    <h3 className='h3 mb-8'>
+                      Technologies I used over the years
+                    </h3>
                     {/* skills */}
                     <div className='mb-16'>
-                      <h4 className='text-xl font-semibold mb-2'>Skills</h4>
                       <div className='border-b border-border mb-4'></div>
                       {/* skill list */}
-                      <div>
+                      <div className='grid grid-cols-2'>
                         {getData(skillData, 'skills').data.map(
                           (item, index) => {
-                            const { name } = item
+                            const { name, list } = item
                             return (
                               <div
                                 className='w-2/4 text-center xl:text-left mx-auto xl:mx-0'
                                 key={index}
                               >
-                                <div className='font-medium'>{name}</div>
+                                <div className='font-semibold capitalize text-primary font-medium'>
+                                  {name}
+                                </div>
+                                <ul className='list-disc ml-5 mt-3 flex flex-col gap-y-3'>
+                                  {list.map((item2, index2) => {
+                                    return <li key={index2}>{item2}</li>
+                                  })}
+                                </ul>
                               </div>
                             )
                           }
                         )}
-                      </div>
-                    </div>
-                    {/* tools */}
-                    <div>
-                      <h4 className='text-xl font-semibold mb-2 xl:text-left'>
-                        Tools
-                      </h4>
-                      <div className='border-b border-border mb-4'></div>
-                      {/* tool list */}
-                      <div className='flex gap-x-8 justify-center xl:justify-start'>
-                        {getData(skillData, 'tools').data.map((item, index) => {
-                          const { imgPath } = item
-                          return (
-                            <div key={index}>
-                              <Image
-                                src={imgPath}
-                                width={48}
-                                height={48}
-                                alt=''
-                                priority
-                              />
-                            </div>
-                          )
-                        })}
                       </div>
                     </div>
                   </div>
